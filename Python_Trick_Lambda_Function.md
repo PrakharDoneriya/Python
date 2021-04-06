@@ -1,6 +1,6 @@
 # Python Trick :: Lambda Functions 
 
-### **Read Time : 7 mins 🕒**
+### **Read Time : 4 mins 🕒**
 
 ## Lambda Function
 * These function behaves like regular functions but are single expression.
