@@ -30,7 +30,7 @@ print(add(5, 3))
 ```
 8
 ```
-It seems like writing functions without def keyword ? Right🤔
+It seems like writing functions without def keyword ? Right
 
 * You can call the function while writing it, instead of giving name to the function
 ```python
