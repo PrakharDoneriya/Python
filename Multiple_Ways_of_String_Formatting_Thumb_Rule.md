@@ -1,7 +1,5 @@
 # Multiple Ways of String Formatting & Thumb Rule
 
-### **Read Time : 6 mins 🕒**
-
 ## String formatting ways :
 * Old Style String Formatting (printf style)
 * New Style String Formatting (using format)
