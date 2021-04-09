@@ -59,4 +59,4 @@ Never pass tuple to condition
 ```python
 assert (10 > 20, "Fail")
 ```
-The above condition will always pass 😵
+The above condition will always pass
