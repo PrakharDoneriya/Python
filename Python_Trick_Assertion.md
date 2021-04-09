@@ -1,7 +1,5 @@
 # Python Trick :: Assertion (assert Keyword)
 
-### **Read Time : 4 mins 🕒**
-
 ## Assertion
 * Assert statement is helpful for debugging the code, it allows to test condition
 * If the condition is true then program works fine else it will fail and raise AssertionError
