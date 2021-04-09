@@ -1,7 +1,5 @@
 # Python Trick :: Context Manager & with Statement 
 
-### **Read Time : 7 mins 🕒**
-
 ## Context Manger
 * It's a simple interface that your object needs to follow in order to support the with statement.
 * You only need to add \_\_enter__ and \_\_exit__ methods to an object, if you want it to function as context manager.
