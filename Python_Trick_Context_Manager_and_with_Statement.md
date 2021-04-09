@@ -15,14 +15,14 @@ f = open('file.txt', 'w')
 f.write('hello, world!')
 f.close()
 ```
-Above implementation won't guarantee file is closed or not, Suppose there is some exception raised while calling f.write() then the code may leak file descriptor ☹️.
+Above implementation won't guarantee file is closed or not, Suppose there is some exception raised while calling f.write() then the code may leak file descriptor.
 
 * Quick Fix
 ```python
 with open('file.txt', 'w') as f:
     f.write('hello, world!')
 ```
-Opening file using with statement is recommended because it make sure that open file descriptor are closed automatically 😃.
+Opening file using with statement is recommended because it make sure that open file descriptor are closed automatically.
 * How it works internally?
 ```python
 f = open('file.txt', 'w')
@@ -52,7 +52,7 @@ if __name__ == "__main__" :
         f.write('hello, world!')
         f.write('BYE :)')            
 ```
- &nbsp; &nbsp; Have you noticed its looks like implementing *open()* context manager😊?
+ &nbsp; &nbsp; Have you noticed its looks like implementing *open()* context manager?
 
 *  Writing a class-based context manager isn’t the only way to support the with statement in Python
 * You can also use contextlib's contextmanager decorator for defining generator-based factory function that will automatically support *with statement*.
@@ -75,7 +75,7 @@ if __name__ == "__main__" :
 In this case ManageFile() is generator that first acquires the resource and temporarily suspends its execution and yield resource, that can used by the caller. Once caller leaves the *with* context, generator continues execution to clean-up steps if any needed and finally resource get released to the system.
 
 ### Let's have some fun with context manager
-* Implementing our own indenter that will take care of indentation while printing something in output 🤪
+* Implementing our own indenter that will take care of indentation while printing something in output
 ```python
 class Indenter:
     def __init__(self):
