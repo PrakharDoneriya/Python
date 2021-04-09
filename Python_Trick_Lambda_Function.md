@@ -1,7 +1,5 @@
 # Python Trick :: Lambda Functions 
 
-### **Read Time : 4 mins 🕒**
-
 ## Lambda Function
 * These function behaves like regular functions but are single expression.
 * Provides deceleration of anonymous functions.
