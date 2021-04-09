@@ -145,7 +145,7 @@ if __name__ == "__main__" :
 ```python
 ['_Test__num3', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_num2', 'num1']
 ```
-Have you noticed __num3 in the output🤔? (it is written as _Test__num3)
+Have you noticed __num3 in the output? (it is written as _Test__num3)
 * Python does this to protect the variable from getting overridden in subclasses
 Let's try to extend the class & try to override the exiting attributes
 ```python
@@ -169,8 +169,8 @@ Traceback (most recent call last):
     print(dt.__num3)
 AttributeError: 'DerivedTest' object has no attribute '__num3'
 ```
-AttributeError for dt.__num3 🥴
-* Name mangling strikes again 😄
+AttributeError for dt.__num3
+* Name mangling strikes again
 ```python
 >>> dir(DerivedTest())
 ['_DerivedTest__num3', '_Test__num3', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_num2', 'num1']
@@ -208,7 +208,7 @@ class MangledGlobal:
 >>> MangledGlobal().test()
 23
 ```
-If you are wondering about it 😳, This is due to name mangling (__mangled will be written as _MangledGlobal__mangled), I was just able to take the reference 😉
+If you are wondering about it, This is due to name mangling (__mangled will be written as _MangledGlobal__mangled), I was just able to take the reference
 
 ## 4.  Double Leading and Trailing Underscore : "\_\_var__"
 * Name mangling is not applicable
