@@ -1,7 +1,5 @@
 # Meaning of Underscore & Dunders
 
-### **Read Time : 10 mins 🕒**
-
 ## Patterns of Underscore used in Python
 * Single Leading Underscore : _var
 * Single Trailing Underscore : var_
