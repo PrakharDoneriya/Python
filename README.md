@@ -3,7 +3,7 @@
 3. Python Tricks ⇒
     1. [Assertion](https://github.com/PrakharDoneriya/Python/blob/master/Python_Trick_Assertion.md)
     2. [Context Manager & With Statement](https://github.com/PrakharDoneriya/Python/blob/master/Python_Trick_Context_Manager_and_with_Statement.md)
-    3. [Decorator](https://github.com/PrakharDoneriya/Python/blob/master/Python_Trick_Decorators.md) 
+    3. [Decorators](https://github.com/PrakharDoneriya/Python/blob/master/Python_Trick_Decorators.md) 
     4. Function Arguments ⇒
         1. [*args & **kwargs Parameters](https://github.com/PrakharDoneriya/Python/blob/master/Python_Trick_args_kwargs_Parameters.md)
         2. [Argument Unpacking](https://github.com/PrakharDoneriya/Python/blob/master/Python_Trick_Function_Arguments_Unpacking.md)
