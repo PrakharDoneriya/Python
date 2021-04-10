@@ -110,4 +110,27 @@ In Decorator 2
 In Decorator 1
 In My Decorator
 ```
-*   You can also modify the behavior as explained in previous example
+* You can also modify the behavior as explained in previous example
+## Function Decorating that accepts Arguments
+```python
+def my_decorator(function):
+    def wrapper(*args, **kwargs):
+        print("Orginal function \"{}\" arguments are {} {}".format(function.__name__, args, kwargs))
+        function_data = function(*args, **kwargs)
+        print("{}() returned {}".format(function.__name__, function_data))
+        return function_data
+    return wrapper
+
+@my_decorator
+def fun(str1, str2):
+    return "{}, {}".format(str1, str2)
+
+if __name__ == "__main__":
+    print(fun("Hi", "Python Programmer"))
+```
+* Output
+```python
+Orginal function "fun" arguments are ('Hi', 'Python Programmer') {}
+fun() returned Hi, Python Programmer
+Hi, Python Programmer
+```
