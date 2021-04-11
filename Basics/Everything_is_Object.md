@@ -157,3 +157,9 @@ In this example map iterate over the entire arguments_list and apply my_fun func
 ```python
 print("\n".join(list(map(my_fun, arguments_list))))
 ```
+* Output
+```python
+HI
+PYTHON
+PROGRAMMER
+```
